@@ -7,6 +7,7 @@ extends CharacterBody3D
 @export var gravity := 0.2
 @export var mouse_sensitivity := 0.005
 
+
 @onready var head: Node3D = $Head
 
 
