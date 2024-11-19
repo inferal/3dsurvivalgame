@@ -35,7 +35,9 @@ version_control/autoload_on_startup=true
 [file_customization]
 
 folder_colors={
-"res://Models/": "green"
+"res://Models/": "green",
+"res://Resources/": "orange",
+"res://Scripts/Resources/": "orange"
 }
 
 [input]
