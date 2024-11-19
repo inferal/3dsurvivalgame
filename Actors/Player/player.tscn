@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://vwp2roqu7gto"]
+[gd_scene load_steps=5 format=3 uid="uid://vwp2roqu7gto"]
 
 [ext_resource type="Script" path="res://Scripts/Actors/Player/player.gd" id="1_vhr1b"]
 [ext_resource type="Script" path="res://Scripts/Actors/Player/interaction_ray_cast.gd" id="2_5ni5v"]
+[ext_resource type="Script" path="res://Scripts/Scenes/Managers/inventory_manager.gd" id="3_v1key"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_q8mi5"]
 radius = 0.25
@@ -25,3 +26,8 @@ target_position = Vector3(0, 0, -2)
 collision_mask = 4
 collide_with_areas = true
 script = ExtResource("2_5ni5v")
+
+[node name="Managers" type="Node" parent="."]
+
+[node name="InventoryManager" type="Node" parent="Managers"]
+script = ExtResource("3_v1key")
