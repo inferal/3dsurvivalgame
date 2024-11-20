@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cft4ooakmr4b"]
 
-[ext_resource type="Script" path="res://Scripts/Bulletins/bulletin.gd" id="1_gavck"]
-[ext_resource type="Script" path="res://Scripts/Bulletins/iteraction_prompt.gd" id="1_vyba8"]
+[ext_resource type="Script" path="res://Scripts/Bulletins/iteraction_prompt.gd" id="1_30kh0"]
+[ext_resource type="Script" path="res://Scripts/Bulletins/bulletin.gd" id="2_fxwne"]
 
 [node name="InteractonPrompt" type="Control"]
 layout_mode = 3
@@ -10,8 +10,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_vyba8")
-metadata/_custom_type_script = ExtResource("1_gavck")
+script = ExtResource("1_30kh0")
+metadata/_custom_type_script = ExtResource("2_fxwne")
 
 [node name="Label" type="Label" parent="."]
 custom_minimum_size = Vector2(128, 64)

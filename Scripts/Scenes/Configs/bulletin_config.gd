@@ -1,13 +1,15 @@
 class_name BulletinConfig
 
 enum Keys{
-	InteractionPrompt
+	InteractionPrompt,
+	CraftingMenu
 }
 
 const BULLETIN_PATHS := {
-	Keys.InteractionPrompt : "res://Bulletins/iteraction_prompt.tscn"
+	Keys.InteractionPrompt : "res://Bulletins/iteraction_prompt.tscn",
+	Keys.CraftingMenu : "res://Bulletins/Player_menus/crafting_menu.tscn"
 }
 
-static func get_bulletin(key: Keys) -> Bulletin:
-	return load(BULLETIN_PATHS.get(key)).instantiate()
+static func get_bulletin(bulletin_key: Keys) -> PackedScene:
+	return load(BULLETIN_PATHS.get(bulletin_key))
 	

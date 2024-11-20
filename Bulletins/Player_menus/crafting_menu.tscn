@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://fsafxynqk6xo"]
+
+[ext_resource type="PackedScene" uid="uid://c37as014jm7c2" path="res://Bulletins/Player_menus/player_menu_base.tscn" id="1_5plxy"]
+
+[node name="CraftingMenu" instance=ExtResource("1_5plxy")]
