@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://b3cyvxhbwt54m"]
+
+[ext_resource type="Script" path="res://Scripts/Scenes/Managers/stage_controller.gd" id="1_0e3vx"]
+[ext_resource type="PackedScene" uid="uid://b0nh6rjlbet68" path="res://Ui/Hud/hud.tscn" id="8_6y7pd"]
+[ext_resource type="Script" path="res://Scripts/Scenes/Managers/bulleting_controller.gd" id="9_73nn6"]
+
+[node name="MainGame" type="Node"]
+
+[node name="StageController" type="Node" parent="."]
+script = ExtResource("1_0e3vx")
+
+[node name="UILayer" type="CanvasLayer" parent="."]
+
+[node name="HUDController" type="Node" parent="UILayer"]
+
+[node name="HUD" parent="UILayer/HUDController" instance=ExtResource("8_6y7pd")]
+
+[node name="BulletingController" type="Node" parent="UILayer"]
+script = ExtResource("9_73nn6")
